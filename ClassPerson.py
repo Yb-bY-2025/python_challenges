@@ -14,10 +14,10 @@ class normal_guy(person):
     super().__init__(name,age,outfit)
     self.sexe = sexe
   def what_outfit(self):
-    return  super().what_outfit + " and elegant "
+    return  super().what_outfit() + " and elegant "
 
 def formating_print(object):
-  return  object.name + " is " +  object.age + " by now , and his outfit : " +  object.outfit + " , and finally  is a " +  object.sexe
+  return  object.name + " is " +  str(object.age) + " by now , and his outfit : " +  object.outfit + " , and finally  is a " +  object.sexe
 
 
   
